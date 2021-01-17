@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="copiar()">Copiar</ion-button>
+  <ion-button (click)="abrir()">Abrir</ion-button>
+  <ion-button (click)="getHoras()">GetHoras</ion-button>
+  <ion-card>
+    <ion-card-title>Horas</ion-card-title>
+    <ion-card-content *ngFor="let hora of horasList">
+      <ion-label>ID: {{hora.id}}==>{{hora.nombre}}</ion-label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
